@@ -48,7 +48,6 @@
                 echo "<script>console.log('no anduvió');</script>";
             }
 
-            // hice unos cambios re copados
 
             
             
