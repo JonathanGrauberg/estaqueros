@@ -40,13 +40,15 @@
             // No anda porque no está funcionando como botón
             // En vez de esperarun evento  ON-CLICK
             // larga el IF de una y devuelve FALSE
-            
+
             if (isset($_POST['crearUnEvento'])) {
                 echo "<script>console.log('anduvió');</script>";
                 header("location:crear-evento.php");
             } else{
                 echo "<script>console.log('no anduvió');</script>";
             }
+
+            // hice unos cambios re copados
 
             
             
