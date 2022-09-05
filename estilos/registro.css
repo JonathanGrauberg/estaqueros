@@ -47,12 +47,14 @@ body {
   display: block;
   text-align: left;
 }
-.login-box .mitad{
+
+.login-box .mitad {
   width: 50%;
   margin-bottom: 20px;
   float: left;
   text-transform: capitalize;
 }
+
 .login-box input {
   width: 100%;
   margin-bottom: 20px;
@@ -85,6 +87,7 @@ body {
   color: #fff;
   box-shadow: 0px 0px 1px #fff
 }
+
 .login-box input[name=Asistir] {
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
@@ -107,15 +110,28 @@ body {
   color: rgb(79, 79, 79);
 }
 
+.inicio .btn {
+  color: #fff;
+  font-size: 50px;
+  text-decoration: none;
+  border: none;
+}
+
+.inicio .btn:hover {
+  transform: rotate(360deg);
+  transition: 0.5s;
+}
+
 .login-box a:hover {
   color: white;
 }
 
-.asistentes input[type=text]{
+.asistentes input[type=text] {
   background-color: transparent;
   color: #fff;
 }
-.asistentes input[type=submit]{
+
+.asistentes input[type=submit] {
   background-color: transparent;
   color: #fff;
 }

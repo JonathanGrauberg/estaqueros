@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php
+//  session_start(); 
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,9 +16,9 @@
 
 <body>
     <div class="row justify-content-center">
-        <div class="col-auto text-center login-box">
+        <div class="col-auto text-center login-box inicio">
             <a href="../Registro/Ingreso.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
-            <h1>Eventos de id: <?php echo $_SESSION['idUser']?></h1>
+            <h1>Eventos</h1>
 
             <?php
             include('consulta-eventos.php');
@@ -32,15 +34,15 @@
             }
 
             ?>
-            <input name="crearUnEvento" type="submit" value="Crear Evento" class="btcrearevento">
-
+            <!-- <input name="crearUnEvento" type="submit" value="Crear Evento" class="btcrearevento"> -->
+            <a href="Crear-evento.php" class="btn">+</a>
 
 
             <?php
             // No anda porque no está funcionando como botón
             // En vez de esperarun evento  ON-CLICK
             // larga el IF de una y devuelve FALSE
-
+            
             if (isset($_POST['crearUnEvento'])) {
                 echo "<script>console.log('anduvió');</script>";
                 header("location:crear-evento.php");
