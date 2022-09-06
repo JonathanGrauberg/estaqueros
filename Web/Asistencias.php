@@ -30,10 +30,12 @@
                 <?php
                 }
                 ?>
-                <input name="confirmarAsistencia" type="submit" value="Confirmar asistencia" class="btcrearevento">
+                <!-- <input name="confirmarAsistencia" type="submit" value="Confirmar asistencia" class="btcrearevento"> -->
+                <a href="Crear-asistencia.php">Participar</a>
+
             </form>
             <?php
-            include('Crear-asistencia.php');
+            // include('Crear-asistencia.php');
             ?>
         </div>
     </div>

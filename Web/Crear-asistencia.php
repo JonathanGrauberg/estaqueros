@@ -1,22 +1,26 @@
-<?php
+<?php session_start() ?>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/estilos/registro.css">
+    <title>Eventos | Estaqueros</title>
+</head>
 
-include('con_db.php');
+<body>
+    <div class="row justify-content-center">
+        <div class="col-auto text-center login-box asistentes">
+            <a href="inicio.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
+            <h1><?php echo "Soy : " .$_SESSION['user'] ?></h1>
+            
+            <!-- aca deberia estar el boton que confirme la asistencia y vuelva a la pagina anterior -->
+           
+        </div>
+    </div>
+</body>
 
-
-if (isset($_POST["confirmarAsistencia"])) {
-    if (!strlen($_SESSION['idUser'])) {
-        $idEvent = $_SESSION['idEvent'];
-        $idUser = $_SESSION['idUser'];
-        $consultaAttendant = "INSERT INTO attendant(id_event, id_user) VALUES ('$idEvent','$idUser')";
-        $resultadoAttendant = mysqli_query($conex, $consultaAttendant);
-        header("Refresh:1");
-    } else {
-        echo "Ya estás confirmado al evento!";
-    }
-} else {
-    echo '<script language="javascript">alert("ALGO ESTOY HACIENDO MAL");</script>';
-}
-
-echo $_SESSION['idUser'];
-echo $_SESSION['idEvent'];
+</html>
