@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="/estilos/registro.css">
-    <title>Eventos | Estaqueros</title>
+    <title>Estaqueros</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
                 }
                 ?>
                 <!-- <input name="confirmarAsistencia" type="submit" value="Confirmar asistencia" class="btcrearevento"> -->
-                <a href="Crear-asistencia.php">Participar</a>
+                <a href="Editar-asistencia.php">EDITAR</a>
 
             </form>
             <?php

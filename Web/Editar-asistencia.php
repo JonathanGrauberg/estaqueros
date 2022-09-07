@@ -15,10 +15,18 @@
     <div class="row justify-content-center">
         <div class="col-auto text-center login-box asistentes">
             <a href="inicio.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
-            <h1><?php echo "Soy : " .$_SESSION['user'] ?></h1>
-            
-            <!-- aca deberia estar el boton que confirme la asistencia y vuelva a la pagina anterior -->
-           
+            <h1><?php echo $_SESSION['user'] ?></h1>
+
+            <div class="opciones">
+                <form action="Quiero-Participar.php" method="post">
+                    <input type="submit" name="qParticipar" value="Quiero participar!" />
+                    <?php include ("Quiero-Participar.php"); ?>
+                </form>
+                <form action="Quiero-salir.php" method="post">
+                    <input type="submit" name="qSalir" value="Quiero salir" />
+                    <?php include ("Quiero-salir.php"); ?>
+                </form>
+            </div>
         </div>
     </div>
 </body>
