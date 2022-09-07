@@ -15,28 +15,29 @@
         <div class="col-auto text-center login-box asistentes">
             <a href="inicio.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
             <h1>Participantes</h1>
-            <form method="POST">
-                <?php
-                include('consulta-asistencias.php');
+            <div class="contList">
+                <form method="POST">
+                    <?php
+                    include('consulta-asistencias.php');
 
-                while ($CantidadDeAsistencias = mysqli_fetch_array($resultadoAsistencias)) {
-                ?>
-                    <form method="post">
-                        <input type="text" value="<?php echo $CantidadDeAsistencias['user'] ?>" class="mitad">
-                    </form>
-                    <form method="post">
-                        <input type="text" value="<?php echo "$ " . $CantidadDeAsistencias['monto'] ?> " class="mitad">
-                    </form>
-                <?php
-                }
-                ?>
-                <!-- <input name="confirmarAsistencia" type="submit" value="Confirmar asistencia" class="btcrearevento"> -->
+                    while ($CantidadDeAsistencias = mysqli_fetch_array($resultadoAsistencias)) {
+                    ?>
+                        <form method="post">
+                            <input type="text" value="<?php echo $CantidadDeAsistencias['user'] ?>" class="mitad">
+                        </form>
+                        <form method="post">
+                            <input type="text" value="<?php echo "$ " . $CantidadDeAsistencias['monto'] ?> " class="mitad">
+                        </form>
+                    <?php
+                    }
+                    ?>
+                    <!-- <input name="confirmarAsistencia" type="submit" value="Confirmar asistencia" class="btcrearevento"> -->
+
+
+                </form>
                 <a href="Editar-asistencia.php">EDITAR</a>
+            </div>
 
-            </form>
-            <?php
-            // include('Crear-asistencia.php');
-            ?>
         </div>
     </div>
 </body>
