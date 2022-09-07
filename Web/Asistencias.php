@@ -35,9 +35,8 @@
 
 
                 </form>
-                <a href="Editar-asistencia.php">EDITAR</a>
             </div>
-
+            <a href="Editar-asistencia.php">EDITAR</a>
         </div>
     </div>
 </body>
