@@ -10,5 +10,7 @@ foreach ($_POST as $name => $value) {
 
 $_SESSION['idEvent'] = $name;
 
+
+
 $consultaAsistencias = "SELECT * from attendant a inner JOIN user u ON a.id_user = u.id where id_event = " . $name;
 $resultadoAsistencias = mysqli_query($conex, $consultaAsistencias);

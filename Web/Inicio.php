@@ -39,19 +39,12 @@
 
 
             <?php
-            // No anda porque no está funcionando como botón
-            // En vez de esperarun evento  ON-CLICK
-            // larga el IF de una y devuelve FALSE
+            foreach ($_POST as $name => $value) {
+                session_start();
+                $_SESSION['idEvent'] = $name;  
+            }
             
-            // if (isset($_POST['crearUnEvento'])) {
-            //     echo "<script>console.log('anduvió');</script>";
-            //     header("location:crear-evento.php");
-            // } else{
-            //     echo "<script>console.log('no anduvió');</script>";
-            // }
-
-
-            
+                    
             
 
             ?>

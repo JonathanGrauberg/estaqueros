@@ -16,6 +16,7 @@ if (isset($_POST["qSalir"])) {
             echo '<script language="javascript">alert("Listo! ya no estas en la lista");</script>';
         }
     } else {
+        header("refresh:1;Inicio.php");
         echo '<script language="javascript">alert("Tenes que estar en la lista primero.");</script>';
     }
 }

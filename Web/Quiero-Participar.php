@@ -9,6 +9,7 @@ if (isset($_POST["qParticipar"])) {
     $resultadoAttendant = mysqli_query($conex, $consultaAttendant);
     $corroborar = mysqli_num_rows($resultadoAttendant);
     if ($corroborar) {
+        header("refresh:1;Inicio.php");
         echo '<script language="javascript">alert("Ya estás agregado en la lista!");</script>';
     } else {
         $insertAttendant = "INSERT INTO attendant(id_event, id_user) VALUES ('$idEvent', '$idUser')";

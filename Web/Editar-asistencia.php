@@ -14,7 +14,7 @@
 <body>
     <div class="row justify-content-center">
         <div class="col-auto text-center login-box asistentes">
-            <a href="inicio.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
+            <a href="Inicio.php"><img class="avatar" src="/Images/Logo estaueros rojo y blanco.png" alt="logo de estaqueros"></a>
             <h1><?php echo $_SESSION['user'] ?></h1>
 
             <div class="opciones">
