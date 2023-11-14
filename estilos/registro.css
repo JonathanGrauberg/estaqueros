@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/images/fuegoGrande.jpg) no-repeat center top;
+  background: url(../Images/fuegoGrande.jpg) no-repeat center top;
   background-size: cover;
   height: 100vh;
 }
